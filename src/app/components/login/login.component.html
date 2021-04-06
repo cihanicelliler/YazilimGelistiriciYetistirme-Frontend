@@ -1,0 +1,31 @@
+<body class="text-center">
+  <form class="form-signin" [formGroup]="loginForm">
+    <h1 class="h3 mb-3 font-weight-normal">Giriş yap</h1>
+    <label for="inputEmail" class="sr-only"></label>
+    <input
+      formControlName="email"
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      placeholder="Email address"
+      required
+      autofocus
+    />
+    <label for="inputPassword" class="sr-only"></label>
+    <input
+      formControlName="password"
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      placeholder="Password"
+      required
+    />
+    <div class="checkbox mb-3">
+      <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+    </div>
+    <button (click)="login()" class="btn btn-lg btn-primary btn-block">
+      Giriş yap
+    </button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+  </form>
+</body>
